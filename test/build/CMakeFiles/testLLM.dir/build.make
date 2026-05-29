@@ -125,12 +125,42 @@ CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
 
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o: CMakeFiles/testLLM.dir/flags.make
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o: /mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/ssd/chat_holmes/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o -MF CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o.d -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o -c /mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp
+
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp > CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i
+
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s
+
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o: CMakeFiles/testLLM.dir/flags.make
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o: /mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/ssd/chat_holmes/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o -MF CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o.d -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o -c /mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp
+
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp > CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i
+
+CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s
+
 # Object files for target testLLM
 testLLM_OBJECTS = \
 "CMakeFiles/testLLM.dir/testLLM.cpp.o" \
 "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o" \
 "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o" \
-"CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o"
+"CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o" \
+"CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o" \
+"CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o"
 
 # External object files for target testLLM
 testLLM_EXTERNAL_OBJECTS =
@@ -139,11 +169,13 @@ testLLM: CMakeFiles/testLLM.dir/testLLM.cpp.o
 testLLM: CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o
 testLLM: CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o
 testLLM: CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o
+testLLM: CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o
+testLLM: CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o
 testLLM: CMakeFiles/testLLM.dir/build.make
 testLLM: /usr/lib/aarch64-linux-gnu/libssl.so
 testLLM: /usr/lib/aarch64-linux-gnu/libcrypto.so
 testLLM: CMakeFiles/testLLM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/ssd/chat_holmes/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable testLLM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/ssd/chat_holmes/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable testLLM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testLLM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

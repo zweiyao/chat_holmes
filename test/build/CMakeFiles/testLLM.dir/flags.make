@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
 
-CXX_INCLUDES = -I/mnt/ssd/chat_holmes/sdk/include
+CXX_INCLUDES = -I/mnt/ssd/chat_holmes/test/../sdk/include
 
 CXX_FLAGS = -g -std=gnu++17
 

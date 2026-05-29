@@ -14,13 +14,16 @@ set(CMAKE_BUILD_TYPE Debug)
 # 添加可执行文件
 add_executable(testLLM testLLM.cpp
 ../sdk/src/util/myLog.cpp
-../sdk/src/DeepSeekProvider.cpp)
+../sdk/src/DeepSeekProvider.cpp
+../sdk/src/OllamaLLMProvider.cpp
+../sdk/src/LLMManager.cpp
+../sdk/src/SessionManager.cpp)
 
 # 设置输出目录
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-# 添加头文件搜索路劲
-include_directories(${CMAKE_PROJECT_INCLUDE_DIR}/../sdk/include)
+# 添加头文件搜索路径（使用相对路径）
+include_directories(../sdk/include)
 
 find_package(OpenSSL REQUIRED)
 include_directories(${OPENSSL_INCLUDE_DIR})

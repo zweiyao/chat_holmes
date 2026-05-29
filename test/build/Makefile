@@ -153,6 +153,30 @@ mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s
 .PHONY : mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s
 
+mnt/ssd/chat_holmes/sdk/src/LLMManager.o: mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.o
+
+# target to build an object file
+mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o
+
+mnt/ssd/chat_holmes/sdk/src/LLMManager.i: mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.i
+
+# target to preprocess a source file
+mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.i
+
+mnt/ssd/chat_holmes/sdk/src/LLMManager.s: mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.s
+
+# target to generate assembly for a file
+mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.s
+
 mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o: mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o
 .PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o
 
@@ -176,6 +200,30 @@ mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.s: mnt/ssd/chat_holmes/sdk/src/Oll
 mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
 .PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
+
+mnt/ssd/chat_holmes/sdk/src/SessionManager.o: mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.o
+
+# target to build an object file
+mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.o
+
+mnt/ssd/chat_holmes/sdk/src/SessionManager.i: mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.i
+
+# target to preprocess a source file
+mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.i
+
+mnt/ssd/chat_holmes/sdk/src/SessionManager.s: mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.s
+
+# target to generate assembly for a file
+mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp.s
 
 mnt/ssd/chat_holmes/sdk/src/util/myLog.o: mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o
 .PHONY : mnt/ssd/chat_holmes/sdk/src/util/myLog.o
@@ -237,9 +285,15 @@ help:
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.s"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/LLMManager.o"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/LLMManager.i"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/LLMManager.s"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.s"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/SessionManager.o"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/SessionManager.i"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/SessionManager.s"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.s"
