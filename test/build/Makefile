@@ -153,6 +153,30 @@ mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s
 .PHONY : mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.s
 
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o: mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o
+
+# target to build an object file
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o
+
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.i: mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.i
+
+# target to preprocess a source file
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.i
+
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.s: mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.s
+
+# target to generate assembly for a file
+mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.s
+
 mnt/ssd/chat_holmes/sdk/src/util/myLog.o: mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o
 .PHONY : mnt/ssd/chat_holmes/sdk/src/util/myLog.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.s"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.o"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.i"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.s"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/util/myLog.s"

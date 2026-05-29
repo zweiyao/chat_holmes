@@ -1,0 +1,13 @@
+CompileFlags:
+  Add: [-std=c++17]
+  Remove: []
+
+Index:
+  Background: Build
+
+Diagnostics:
+  ClangTidy:
+    Add: [-checks=performance-*,readability-*,bugprone-*]
+
+Format:
+  Style: Google

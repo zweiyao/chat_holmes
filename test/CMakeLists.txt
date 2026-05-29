@@ -22,13 +22,11 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 # 添加头文件搜索路劲
 include_directories(${CMAKE_PROJECT_INCLUDE_DIR}/../sdk/include)
 
-set(OPENSSL_ROOT_DIR /usr/local/openssl3)
 find_package(OpenSSL REQUIRED)
-find_package(Threads REQUIRED)
 include_directories(${OPENSSL_INCLUDE_DIR})
 
 # 添加CPPHTTPLIB_OPENSSL_SUPPORT定义
 target_compile_definitions(testLLM PRIVATE CPPHTTPLIB_OPENSSL_SUPPORT)
 
 # 链接库
-target_link_libraries(testLLM jsoncpp fmt spdlog gtest OpenSSL::SSL OpenSSL::Crypto Threads::Threads)
+target_link_libraries(testLLM jsoncpp fmt  spdlog gtest OpenSSL::SSL OpenSSL::Crypto sqlite3)

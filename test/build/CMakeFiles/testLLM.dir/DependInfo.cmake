@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o.d"
+  "/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o.d"
   "/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o.d"
   "/mnt/ssd/chat_holmes/test/testLLM.cpp" "CMakeFiles/testLLM.dir/testLLM.cpp.o" "gcc" "CMakeFiles/testLLM.dir/testLLM.cpp.o.d"
   )

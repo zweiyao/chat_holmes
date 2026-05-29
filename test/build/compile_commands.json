@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/mnt/ssd/chat_holmes/test/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_OPENSSL_SUPPORT -I/mnt/ssd/chat_holmes/sdk/include -g -std=gnu++17 -o CMakeFiles/testLLM.dir/testLLM.cpp.o -c /mnt/ssd/chat_holmes/test/testLLM.cpp",
+  "file": "/mnt/ssd/chat_holmes/test/testLLM.cpp"
+},
+{
+  "directory": "/mnt/ssd/chat_holmes/test/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_OPENSSL_SUPPORT -I/mnt/ssd/chat_holmes/sdk/include -g -std=gnu++17 -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp.o -c /mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp",
+  "file": "/mnt/ssd/chat_holmes/sdk/src/util/myLog.cpp"
+},
+{
+  "directory": "/mnt/ssd/chat_holmes/test/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_OPENSSL_SUPPORT -I/mnt/ssd/chat_holmes/sdk/include -g -std=gnu++17 -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o -c /mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp",
+  "file": "/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp"
+},
+{
+  "directory": "/mnt/ssd/chat_holmes/test/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_OPENSSL_SUPPORT -I/mnt/ssd/chat_holmes/sdk/include -g -std=gnu++17 -o CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o -c /mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp",
+  "file": "/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp"
+}
+]
