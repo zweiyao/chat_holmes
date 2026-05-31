@@ -75,7 +75,7 @@ TEST(ChatSDKTest, sendMessage)
     auto deepseekConfig=std::make_shared<sdk_holmes::APIConfig>();
     ASSERT_TRUE(deepseekConfig != nullptr);
     deepseekConfig->_modelName="deepseek-chat";
-    deepseekConfig->_apiKey="1";
+    deepseekConfig->_apiKey="sk-de1ec7c37c9443829eea30f6f76e5cab";
     ASSERT_FALSE(deepseekConfig->_apiKey.empty());
     deepseekConfig->_temperature=0.7;
     deepseekConfig->_maxTokens=2048;
