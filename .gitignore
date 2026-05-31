@@ -1,3 +1,4 @@
 cpp-httplib/
 .cache/
 test/build/
+sdk/build/

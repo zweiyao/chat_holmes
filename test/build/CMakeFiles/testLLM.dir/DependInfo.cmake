@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o.d"
+  "/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o.d"
   "/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o.d"
   "/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o.d"
   "/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/OllamaLLMProvider.cpp.o.d"

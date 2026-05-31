@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o"
+  "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o.d"
+  "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o"
+  "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o.d"
   "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o"
   "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o.d"
   "CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp.o"

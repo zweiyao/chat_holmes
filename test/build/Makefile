@@ -129,6 +129,54 @@ testLLM/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/build
 .PHONY : testLLM/fast
 
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.o: mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.o
+
+# target to build an object file
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.o
+
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.i: mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.i
+
+# target to preprocess a source file
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.i
+
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.s: mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.s
+
+# target to generate assembly for a file
+mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp.s
+
+mnt/ssd/chat_holmes/sdk/src/DataManager.o: mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.o
+
+# target to build an object file
+mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.o
+
+mnt/ssd/chat_holmes/sdk/src/DataManager.i: mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.i
+
+# target to preprocess a source file
+mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.i
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.i
+
+mnt/ssd/chat_holmes/sdk/src/DataManager.s: mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.s
+
+# target to generate assembly for a file
+mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.s
+.PHONY : mnt/ssd/chat_holmes/sdk/src/DataManager.cpp.s
+
 mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.o: mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp.o
 .PHONY : mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.o
 
@@ -282,6 +330,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testLLM"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/ChatSDK.o"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/ChatSDK.i"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/ChatSDK.s"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/DataManager.o"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/DataManager.i"
+	@echo "... mnt/ssd/chat_holmes/sdk/src/DataManager.s"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.o"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.i"
 	@echo "... mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.s"

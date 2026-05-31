@@ -17,7 +17,9 @@ add_executable(testLLM testLLM.cpp
 ../sdk/src/DeepSeekProvider.cpp
 ../sdk/src/OllamaLLMProvider.cpp
 ../sdk/src/LLMManager.cpp
-../sdk/src/SessionManager.cpp)
+../sdk/src/SessionManager.cpp
+../sdk/src/DataManager.cpp
+../sdk/src/ChatSDK.cpp)
 
 # 设置输出目录
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
