@@ -489,7 +489,7 @@ std::vector<Message> DataManager::getSessionMessages(const std::string& sessionI
     return messages;
 }
 
-// 删除制定会话的历史消息
+// 删除指定会话的历史消息
 bool DataManager::deleteSessionMessages(const std::string& sessionId){
     std::lock_guard<std::mutex> lock(_mutex);
 
