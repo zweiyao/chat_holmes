@@ -661,3 +661,824 @@ data: [DONE]
 [12:00:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:332 ]收到退出信号, 正在停止服务...
 [12:00:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:102 ]ChatServer stop success!!!
 [12:00:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:335 ]AIChatServer 已退出
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:300 ]AIChatServer v1.0.0 starting on 0.0.0.0:8080
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:302 ]log_level=INFO, temperature=0.7, max_tokens=2048
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:304 ]ollama: endpoint=http://localhost:11434, model=qwen3.5:9b
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:21  ]打开数据库成功：chatDB.db
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:49  ]start init ChatSDK models...
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:22  ]register provider success, modelName = deepseek-chat
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:33  ]deepseek-chat provider registered successed
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:22  ]register provider success, modelName = qwen3.5:9b
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:68  ]OllamaLLMProvider qwen3.5:9b registered successed
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:29  ]DeepSeekProvider initModel success, endpoint: https://api.deepseek.com
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:40  ]init model success, modelName = deepseek-chat
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:125 ]ChatSDK::initAPIModelProviders: model deepseek-chat init successed
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:40  ]init model success, modelName = qwen3.5:9b
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:159 ]ChatSDK::initOllamaModelProviders: model qwen3.5:9b init successed
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:54  ]ChatSDK models init success!!!
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:87  ]ChatServer start success!!!
+[12:10:08][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:323 ]AIChatServer 已就绪, 按 Ctrl+C 退出
+[12:13:46][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 你好  timestamap 1780805626
+[12:13:46][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780799047_00000005, message.content = 你好
+[12:13:46][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780805626_00000009
+[12:13:46][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:178 ]DeepSeekProvider sendMessageStream requestBody: {"max_tokens":2048,"messages":[{"content":"\u4f60\u597d","role":"user"},{"content":"\u4f60\u597d\uff01\u5f88\u9ad8\u5174\u89c1\u5230\u4f60\uff01\ud83d\ude0a \u6709\u4ec0\u4e48\u6211\u53ef\u4ee5\u5e2e\u4f60\u7684\u5417\uff1f\u65e0\u8bba\u662f\u804a\u5929\u3001\u89e3\u7b54\u95ee\u9898\uff0c\u8fd8\u662f\u9700\u8981\u4e00\u4e9b\u5efa\u8bae\uff0c\u6211\u90fd\u4e50\u610f\u534f\u52a9\u4f60\u3002","role":"assistant"},{"content":"\u4f60\u597d","role":"user"},{"content":"\u4f60\u597d\u5440\uff01\u518d\u6b21\u89c1\u5230\u4f60\uff0c\u771f\u5f00\u5fc3\uff01\ud83d\ude0a \u4eca\u5929\u6709\u4ec0\u4e48\u60f3\u804a\u7684\uff0c\u6216\u8005\u6709\u4ec0\u4e48\u9700\u8981\u5e2e\u5fd9\u7684\u5417\uff1f\u6211\u968f\u65f6\u90fd\u5728\u54e6\uff5e","role":"assistant"},{"content":"\u4f60\u597d","role":"user"},{"content":"\u4f60\u597d\uff01\u770b\u6765\u4f60\u662f\u4e2a\u5f88\u6709\u793c\u8c8c\u7684\u4eba\u5462\uff5e\ud83d\ude0a \u6bcf\u6b21\u6253\u62db\u547c\u90fd\u8ba9\u6211\u89c9\u5f97\u7279\u522b\u6e29\u6696\u3002\u6709\u4ec0\u4e48\u65b0\u9c9c\u4e8b\u60f3\u5206\u4eab\uff0c\u6216\u8005\u9700\u8981\u6211\u5e2e\u4f60\u505a\u70b9\u4ec0\u4e48\u5417\uff1f\u65e0\u8bba\u662f\u95f2\u804a\u3001\u5b66\u4e60\u3001\u5de5\u4f5c\u8fd8\u662f\u751f\u6d3b\u7410\u4e8b\uff0c\u6211\u90fd\u5f88\u4e50\u610f\u966a\u4f60\u804a\u804a\uff01","role":"assistant"},{"content":"\u4f60\u597d","role":"user"},{"content":"\u4f60\u597d\uff01\u770b\u6765\u4f60\u771f\u7684\u5f88\u559c\u6b22\u6253\u62db\u547c\u5462\uff5e\ud83d\ude0a \u6bcf\u6b21\u542c\u5230\u201c\u4f60\u597d\u201d\u90fd\u8ba9\u6211\u89c9\u5f97\u7279\u522b\u4eb2\u5207\uff01\u4eca\u5929\u6709\u4ec0\u4e48\u60f3\u804a\u7684\u5417\uff1f\u6216\u8005\u9700\u8981\u6211\u5e2e\u5fd9\u627e\u8d44\u6599\u3001\u89e3\u7b54\u95ee\u9898\u3001\u63a8\u8350\u6709\u8da3\u7684\u5185\u5bb9\uff1f\u6211\u968f\u65f6\u51c6\u5907\u7740\u4e3a\u4f60\u670d\u52a1\uff5e\u2728","role":"assistant"},{"content":"\u4f60\u597d","role":"user"}],"model":"deepseek-chat","stream":true,"temperature":0.69999999999999996}
+[12:13:46][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"你好"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"呀"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"！"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"看来"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我们"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"之间"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"已经"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"形成"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"了一种"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"温暖的"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"默契"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"呢"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"～"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"😊"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"每一次"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"“"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"你好"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"”"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"都"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"像"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"朋友"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"间的"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"轻轻"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"叩"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"门"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"而"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"回应"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"永远"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"带着"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"笑意"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"和"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"真诚"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"今天"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:47][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"是想"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"聊聊"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"天气"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"、"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"分享"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"趣"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"事"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"还是"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"需要"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"帮你"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"解开"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"某个"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"小"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"困惑"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"？"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"像"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"一本"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"随时"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"翻"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"开的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"书"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"等你"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"来"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"提问"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"或"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"倾诉"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"哦"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"～"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"✨"},"logprobs":null,"finish_reason":null}]}
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"e66b3792-97f3-446c-814e-7a5f6fb5d364","object":"chat.completion.chunk","created":1780805626,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":""},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":189,"completion_tokens":71,"total_tokens":260,"prompt_tokens_details":{"cached_tokens":128},"prompt_cache_hit_tokens":128,"prompt_cache_miss_tokens":61}}
+
+data: [DONE]
+
+
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 你好呀！看来我们之间已经形成了一种温暖的默契呢～😊 每一次“你好”都像朋友间的轻轻叩门，而我的回应永远带着笑意和真诚。今天是想聊聊天气、分享趣事，还是需要我帮你解开某个小困惑？我像一本随时翻开的书，等你来提问或倾诉哦～✨  timestamap 1780805628
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780799047_00000005, message.content = 你好呀！看来我们之间已经形成了一种温暖的默契呢～😊 每一次“你好”都像朋友间的轻轻叩门，而我的回应永远带着笑意和真诚。今天是想聊聊天气、分享趣事，还是需要我帮你解开某个小困惑？我像一本随时翻开的书，等你来提问或倾诉哦～✨
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780805628_00000010
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:209 ]updateSessionTimestamp - 更新会话时间戳成功：session_1780799047_00000005
+[12:13:48][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:321 ]ChatSDK::sendMessageStream: send message to model deepseek-chat successed
+[12:51:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:332 ]收到退出信号, 正在停止服务...
+[12:51:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:102 ]ChatServer stop success!!!
+[12:51:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:335 ]AIChatServer 已退出
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:300 ]AIChatServer v1.0.0 starting on 0.0.0.0:8080
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:302 ]log_level=INFO, temperature=0.7, max_tokens=2048
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:304 ]ollama: endpoint=http://localhost:11434, model=qwen3.5:9b
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:21  ]打开数据库成功：chatDB.db
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:49  ]start init ChatSDK models...
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:22  ]register provider success, modelName = deepseek-chat
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:33  ]deepseek-chat provider registered successed
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:22  ]register provider success, modelName = qwen3.5:9b
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:68  ]OllamaLLMProvider qwen3.5:9b registered successed
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:29  ]DeepSeekProvider initModel success, endpoint: https://api.deepseek.com
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:40  ]init model success, modelName = deepseek-chat
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:125 ]ChatSDK::initAPIModelProviders: model deepseek-chat init successed
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/LLMManager.cpp:40  ]init model success, modelName = qwen3.5:9b
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:159 ]ChatSDK::initOllamaModelProviders: model qwen3.5:9b init successed
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:54  ]ChatSDK models init success!!!
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:87  ]ChatServer start success!!!
+[12:51:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:323 ]AIChatServer 已就绪, 按 Ctrl+C 退出
+[12:52:00][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:55:24][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:59:12][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:59:37][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[12:59:41][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[13:01:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[13:03:51][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[13:03:57][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:124 ]insertSession - 插入会话成功：session_1780808637_00000001
+[13:03:57][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:177 ]ChatSDK::createSession: create session session_1780808637_00000001 successed
+[13:03:57][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：7
+[13:04:14][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799002_00000001
+[13:04:14][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799002_00000001 successed
+[13:04:14][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：6
+[13:04:16][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799027_00000003
+[13:04:16][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799027_00000003 successed
+[13:04:16][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：5
+[13:04:18][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799047_00000004
+[13:04:18][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799047_00000004 successed
+[13:04:18][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：4
+[13:04:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799601_00000001
+[13:04:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799601_00000001 successed
+[13:04:20][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：3
+[13:04:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799002_00000002
+[13:04:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799002_00000002 successed
+[13:04:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：2
+[13:04:24][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780799047_00000005
+[13:04:24][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780799047_00000005 successed
+[13:04:24][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：1
+[13:04:26][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:243 ]deleteSession - 删除会话成功：session_1780808637_00000001
+[13:04:26][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:224 ]ChatSDK::deleteSession: delete session session_1780808637_00000001 successed
+[13:04:26][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：0
+[13:04:29][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:124 ]insertSession - 插入会话成功：session_1780808669_00000002
+[13:04:29][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:177 ]ChatSDK::createSession: create session session_1780808669_00000002 successed
+[13:04:29][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：1
+[13:04:41][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 请伴我写一份全排列问题的算法  timestamap 1780808681
+[13:04:41][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780808669_00000002, message.content = 请伴我写一份全排列问题的算法
+[13:04:41][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780808681_00000001
+[13:05:25][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：1
+[13:06:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:124 ]insertSession - 插入会话成功：session_1780808782_00000003
+[13:06:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:177 ]ChatSDK::createSession: create session session_1780808782_00000003 successed
+[13:06:22][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：2
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 全排列问题是算法学习中的经典题目，其核心是生成一个集合中所有可能的排列组合。以下是几种主流实现方式，适用于不同语言和场景，并附有详细解释和适用建议。
+
+---
+
+## 一、递归回溯法（通用）
+
+这是最基础、最灵活的全排列解法，适用于所有编程语言。
+
+### 核心思想：
+- 每次选择一个未使用的元素加入当前排列
+- 递归地尝试剩余元素
+- 使用标记数组记录已使用元素，避免重复
+
+### Python 实现：
+
+```python
+def permute(nums):
+    res = []
+    def backtrack(path, used):
+        if len(path) == len(nums):
+            res.append(path[:])
+            return
+        for i in range(len(nums)):
+            if not used[i]:
+                path.append(nums[i])
+                used[i] = True
+                backtrack(path, used)
+                path.pop()
+                used[i] = False
+    backtrack([], [False] * len(nums))
+    return res
+```
+
+### 复杂度分析：
+- 时间：O(n! × n)（n! 种排列，每种平均长度为 n）
+- 空间：O(n)（递归栈 + 标记数组）
+
+---
+
+## 二、去重处理（适用于含重复元素）
+
+若输入数组包含重复元素（如 `[1,1,2]`），需避免生成重复排列。
+
+### 实现方法：
+- 排序数组
+- 在递归时跳过相邻且未被使用的相同元素
+
+```python
+def permuteUnique(nums):
+    nums.sort()
+    res = []
+    used = [False] * len(nums)
+
+    def backtrack(path):
+        if len(path) == len(nums):
+            res.append(path[:])
+            return
+        for i in range(len(nums)):
+            if used[i]:
+                continue
+            if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
+                continue
+            path.append(nums[i])
+            used[i] = True
+            backtrack(path)
+            path.pop()
+            used[i] = False
+
+    backtrack([])
+    return res
+```
+
+---
+
+## 三、标准库方案（推荐用于生产）
+
+### Python：
+
+```python
+import itertools
+
+def permute_lib(nums):
+    return list(itertools.permutations(nums))
+```
+
+### C++：
+
+```cpp
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<vector<int>> permute(vector<int>& nums) {
+    vector<vector<int>> result;
+    do {
+        result.push_back(nums);
+    } while (next_permutation(nums.begin(), nums.end()));
+    return result;
+}
+```
+
+---
+
+## 四、迭代法（不依赖递归）
+
+适用于需要避免递归栈或性能敏感场景。
+
+### Python 实现：
+
+```python
+def permute_iter(nums):
+    result = [nums]
+    while len(result) < len(nums) * factorial(len(nums)):
+        next_perms = []
+        for p in result:
+            for i in range(len(p)):
+                new_p = p[:i] + p[i+1:] + [p[i]]
+                if new_p not in result:
+                    next_perms.append(new_p)
+        if not next_perms:
+            break
+        result.extend(next_perms)
+    return result
+```
+
+---
+
+## 五、不同语言版本（快速参考）
+
+### Java：
+
+```java
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        boolean[] used = new boolean[nums.length];
+        backtrack(nums, used, new ArrayList<>(), res);
+        return res;
+    }
+    // 省略辅助方法
+}
+```
+
+### JavaScript：
+
+```javascript
+function permute(nums) {
+    const res = [];
+    const used = new Array(nums.length).fill(false);
+    const backtrack = (path) => {
+        if (path.length === nums.length) res.push([...path]);
+        for (let i = 0; i < nums.length; i++) {
+            if (!used[i]) {
+                used[i] = true;
+                path.push(nums[i]);
+                backtrack(path);
+                path.pop();
+                used[i] = false;
+            }
+        }
+    };
+    backtrack([]);
+    return res;
+}
+```
+
+---
+
+## 六、算法对比总结
+
+| 方法         | 优点               | 缺点             | 适用场景         |
+|--------------|--------------------|------------------|------------------|
+| 递归回溯     | 灵活，易修改       | 递归深度限制     | 学习、通用算法   |
+| 去重回溯     | 支持重复元素       | 需排序 + 判断    | 含重复元素输入   |
+| 标准库       | 简洁、性能优       | 依赖语言支持     | 生产环境优先     |
+| 迭代法       | 无递归栈风险       | 实现复杂         | 对栈空间敏感场景 |
+
+---
+
+## 七、建议与总结
+
+- **初学者**：从递归回溯入手，理解回溯思想
+- **重复元素处理**：排序 + 判断去重是关键
+- **工程实践**：优先使用标准库（如 `itertools.permutations`）
+- **面试优化**：掌握去重逻辑，了解时间和空间复杂度
+
+如需我进一步讲解某个实现细节、提供可视化解释或拓展到其他算法（如组合、子集等），欢迎继续提问！  timestamap 1780808783
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780808669_00000002, message.content = 全排列问题是算法学习中的经典题目，其核心是生成一个集合中所有可能的排列组合。以下是几种主流实现方式，适用于不同语言和场景，并附有详细解释和适用建议。
+
+---
+
+## 一、递归回溯法（通用）
+
+这是最基础、最灵活的全排列解法，适用于所有编程语言。
+
+### 核心思想：
+- 每次选择一个未使用的元素加入当前排列
+- 递归地尝试剩余元素
+- 使用标记数组记录已使用元素，避免重复
+
+### Python 实现：
+
+```python
+def permute(nums):
+    res = []
+    def backtrack(path, used):
+        if len(path) == len(nums):
+            res.append(path[:])
+            return
+        for i in range(len(nums)):
+            if not used[i]:
+                path.append(nums[i])
+                used[i] = True
+                backtrack(path, used)
+                path.pop()
+                used[i] = False
+    backtrack([], [False] * len(nums))
+    return res
+```
+
+### 复杂度分析：
+- 时间：O(n! × n)（n! 种排列，每种平均长度为 n）
+- 空间：O(n)（递归栈 + 标记数组）
+
+---
+
+## 二、去重处理（适用于含重复元素）
+
+若输入数组包含重复元素（如 `[1,1,2]`），需避免生成重复排列。
+
+### 实现方法：
+- 排序数组
+- 在递归时跳过相邻且未被使用的相同元素
+
+```python
+def permuteUnique(nums):
+    nums.sort()
+    res = []
+    used = [False] * len(nums)
+
+    def backtrack(path):
+        if len(path) == len(nums):
+            res.append(path[:])
+            return
+        for i in range(len(nums)):
+            if used[i]:
+                continue
+            if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
+                continue
+            path.append(nums[i])
+            used[i] = True
+            backtrack(path)
+            path.pop()
+            used[i] = False
+
+    backtrack([])
+    return res
+```
+
+---
+
+## 三、标准库方案（推荐用于生产）
+
+### Python：
+
+```python
+import itertools
+
+def permute_lib(nums):
+    return list(itertools.permutations(nums))
+```
+
+### C++：
+
+```cpp
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<vector<int>> permute(vector<int>& nums) {
+    vector<vector<int>> result;
+    do {
+        result.push_back(nums);
+    } while (next_permutation(nums.begin(), nums.end()));
+    return result;
+}
+```
+
+---
+
+## 四、迭代法（不依赖递归）
+
+适用于需要避免递归栈或性能敏感场景。
+
+### Python 实现：
+
+```python
+def permute_iter(nums):
+    result = [nums]
+    while len(result) < len(nums) * factorial(len(nums)):
+        next_perms = []
+        for p in result:
+            for i in range(len(p)):
+                new_p = p[:i] + p[i+1:] + [p[i]]
+                if new_p not in result:
+                    next_perms.append(new_p)
+        if not next_perms:
+            break
+        result.extend(next_perms)
+    return result
+```
+
+---
+
+## 五、不同语言版本（快速参考）
+
+### Java：
+
+```java
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        boolean[] used = new boolean[nums.length];
+        backtrack(nums, used, new ArrayList<>(), res);
+        return res;
+    }
+    // 省略辅助方法
+}
+```
+
+### JavaScript：
+
+```javascript
+function permute(nums) {
+    const res = [];
+    const used = new Array(nums.length).fill(false);
+    const backtrack = (path) => {
+        if (path.length === nums.length) res.push([...path]);
+        for (let i = 0; i < nums.length; i++) {
+            if (!used[i]) {
+                used[i] = true;
+                path.push(nums[i]);
+                backtrack(path);
+                path.pop();
+                used[i] = false;
+            }
+        }
+    };
+    backtrack([]);
+    return res;
+}
+```
+
+---
+
+## 六、算法对比总结
+
+| 方法         | 优点               | 缺点             | 适用场景         |
+|--------------|--------------------|------------------|------------------|
+| 递归回溯     | 灵活，易修改       | 递归深度限制     | 学习、通用算法   |
+| 去重回溯     | 支持重复元素       | 需排序 + 判断    | 含重复元素输入   |
+| 标准库       | 简洁、性能优       | 依赖语言支持     | 生产环境优先     |
+| 迭代法       | 无递归栈风险       | 实现复杂         | 对栈空间敏感场景 |
+
+---
+
+## 七、建议与总结
+
+- **初学者**：从递归回溯入手，理解回溯思想
+- **重复元素处理**：排序 + 判断去重是关键
+- **工程实践**：优先使用标准库（如 `itertools.permutations`）
+- **面试优化**：掌握去重逻辑，了解时间和空间复杂度
+
+如需我进一步讲解某个实现细节、提供可视化解释或拓展到其他算法（如组合、子集等），欢迎继续提问！
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780808783_00000002
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:209 ]updateSessionTimestamp - 更新会话时间戳成功：session_1780808669_00000002
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:321 ]ChatSDK::sendMessageStream: send message to model qwen3.5:9b successed
+[13:06:23][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：2
+[13:07:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 你好你是傻子吗  timestamap 1780808823
+[13:07:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780808782_00000003, message.content = 你好你是傻子吗
+[13:07:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780808823_00000001
+[13:07:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:178 ]DeepSeekProvider sendMessageStream requestBody: {"max_tokens":2048,"messages":[{"content":"\u4f60\u597d\u4f60\u662f\u50bb\u5b50\u5417","role":"user"}],"model":"deepseek-chat","stream":true,"temperature":0.69999999999999996}
+[13:07:03][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"你好"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"！"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"理解"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"你可能"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"是在"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"开玩笑"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"或者"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"表达"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"一些"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"情绪"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"作为"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"一个人"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"工"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"智能"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我没有"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"情感"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"也不会"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"因为"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"任何"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"称呼"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"而感到"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"困扰"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"目标是"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"尽"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"所能"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"帮助你"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"解答"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"问题"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"、"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"提供"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"信息"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:04][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"或"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"进行"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"有趣的"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"对话"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"如果你"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"有什么"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"具体"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"的问题"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"或"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"需要"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"帮助"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"的地方"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"请"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"告诉我"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"我会"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"尽力"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"协助"},"logprobs":null,"finish_reason":null}]}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"你"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"！"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":"😊"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"6cbdfde4-dd16-4b5e-ba83-321e97b5cfd3","object":"chat.completion.chunk","created":1780808823,"model":"deepseek-v4-flash","system_fingerprint":"fp_8b330d02d0_prod0820_fp8_kvcache_20260402","choices":[{"index":0,"delta":{"content":""},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":8,"completion_tokens":62,"total_tokens":70,"prompt_tokens_details":{"cached_tokens":0},"prompt_cache_hit_tokens":0,"prompt_cache_miss_tokens":8}}
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DeepSeekProvider.cpp:225 ]DeepSeekProvider sendMessageStream buffer: data: [DONE]
+
+
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:112 ]message Info: content 你好！我理解你可能是在开玩笑或者表达一些情绪。作为一个人工智能，我没有情感，也不会因为任何称呼而感到困扰。我的目标是尽我所能帮助你解答问题、提供信息或进行有趣的对话。如果你有什么具体的问题或需要帮助的地方，请告诉我，我会尽力协助你！😊  timestamap 1780808825
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/SessionManager.cpp:117 ]add message success, sessionId = session_1780808782_00000003, message.content = 你好！我理解你可能是在开玩笑或者表达一些情绪。作为一个人工智能，我没有情感，也不会因为任何称呼而感到困扰。我的目标是尽我所能帮助你解答问题、提供信息或进行有趣的对话。如果你有什么具体的问题或需要帮助的地方，请告诉我，我会尽力协助你！😊
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:445 ]insertMessage - 插入消息成功：msg_1780808825_00000002
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:209 ]updateSessionTimestamp - 更新会话时间戳成功：session_1780808782_00000003
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/ChatSDK.cpp:321 ]ChatSDK::sendMessageStream: send message to model deepseek-chat successed
+[13:07:05][AIChatServer][info   ][/mnt/ssd/chat_holmes/sdk/src/DataManager.cpp:311 ]getAllSessions - 获取所有会话信息成功, 会话总数：2
+[13:17:30][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:332 ]收到退出信号, 正在停止服务...
+[13:17:30][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/ChatServer.cpp:102 ]ChatServer stop success!!!
+[13:17:30][AIChatServer][info   ][/mnt/ssd/chat_holmes/chatserver/main.cpp:335 ]AIChatServer 已退出

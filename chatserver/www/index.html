@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>AI聊天助手 · 放学后茶会</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-light.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- decorative floating music notes -->
+    <div class="floating-notes" aria-hidden="true">
+        <span class="note note-1">♪</span>
+        <span class="note note-2">♫</span>
+        <span class="note note-3">♬</span>
+        <span class="note note-4">♩</span>
+        <span class="note note-5">♪</span>
+        <span class="note note-6">♫</span>
+    </div>
+
+    <div class="app">
+        <!-- ============== SIDEBAR ============== -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="brand">
+                    <div class="brand-logo" aria-hidden="true">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <!-- chat bubble shape -->
+                            <path d="M8 14C8 9.58 11.58 6 16 6h16c4.42 0 8 3.58 8 8v14c0 4.42-3.58 8-8 8H22l-8 6v-6h-2c-2.21 0-4-1.79-4-4V14z"
+                                  fill="url(#bubbleGrad)" stroke="#EB89A6" stroke-width="1.5"/>
+                            <!-- treble clef inside -->
+                            <path d="M24 13c1.5 0 2 1.2 2 2.5 0 1.3-.5 2.4-1.5 3.3-.5.5-1 .9-1 1.5l1 4c.3 1 .5 2 .5 3 0 2.5-1.8 4.5-4 4.5-1.8 0-3-1.2-3-2.7 0-1.3 1-2.2 2.2-2.2.9 0 1.5.5 1.7 1.2"
+                                  stroke="#4A3A40" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="bubbleGrad" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#FFE3D4"/>
+                                    <stop offset="100%" stop-color="#F4C2D1"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="brand-title">AI聊天助手</h1>
+                        <span class="brand-sub">Houkago Chat ♪</span>
+                    </div>
+                </div>
+
+                <button class="new-chat-btn" id="newChatBtn" type="button">
+                    <span class="btn-icon">＋</span>
+                    <span class="btn-label">新建对话</span>
+                    <span class="btn-tail">♪</span>
+                </button>
+            </header>
+
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-label">history · 历史会话</span>
+                <span class="divider-line"></span>
+            </div>
+
+            <div class="session-list-wrap" id="sessionListWrap">
+                <ul class="session-list" id="sessionList"></ul>
+                <div class="empty-sessions" id="emptySessions" hidden>
+                    <div class="empty-sessions-icon">♪</div>
+                    <p>还没有对话记录<br><span>开启你的第一段旋律吧～</span></p>
+                </div>
+            </div>
+
+            <footer class="sidebar-footer">
+                <span class="sf-dot"></span>
+                <span>Houkago Tea Time · v1.0</span>
+                <span class="sf-clef">𝄞</span>
+            </footer>
+        </aside>
+
+        <!-- ============== MAIN ============== -->
+        <main class="main">
+            <!-- empty state -->
+            <section class="empty-state" id="emptyState">
+                <div class="empty-illustration" aria-hidden="true">
+                    <svg viewBox="0 0 200 180" fill="none">
+                        <!-- saucer -->
+                        <ellipse cx="100" cy="150" rx="70" ry="10" fill="#F4C2D1" opacity="0.5"/>
+                        <!-- cup body -->
+                        <path d="M50 75 Q50 145 100 145 Q150 145 150 75 Z" fill="#FFF8F0" stroke="#EB89A6" stroke-width="2.5"/>
+                        <!-- cup rim -->
+                        <ellipse cx="100" cy="75" rx="50" ry="8" fill="#FFE9DF" stroke="#EB89A6" stroke-width="2.5"/>
+                        <!-- tea inside -->
+                        <ellipse cx="100" cy="76" rx="46" ry="6" fill="#C49880" opacity="0.6"/>
+                        <!-- handle -->
+                        <path d="M150 90 Q172 95 172 110 Q172 125 150 125" stroke="#EB89A6" stroke-width="2.5" fill="none"/>
+                        <!-- steam = music notes -->
+                        <text x="80" y="50" font-size="22" fill="#9DDBC0" font-family="serif">♪</text>
+                        <text x="100" y="35" font-size="26" fill="#EB89A6" font-family="serif">♫</text>
+                        <text x="118" y="50" font-size="20" fill="#F5DD90" font-family="serif">♬</text>
+                        <!-- side flower -->
+                        <circle cx="60" cy="120" r="4" fill="#F5DD90"/>
+                        <circle cx="64" cy="116" r="4" fill="#F5DD90"/>
+                        <circle cx="56" cy="116" r="4" fill="#F5DD90"/>
+                        <circle cx="60" cy="124" r="4" fill="#F5DD90"/>
+                        <circle cx="60" cy="120" r="2.5" fill="#EB89A6"/>
+                    </svg>
+                </div>
+                <h2 class="empty-title">欢迎来到放学后茶会</h2>
+                <p class="empty-text">选择一个历史对话继续，或创建新的对话，<br>开启您的AI之旅</p>
+                <button class="new-chat-btn primary" id="emptyNewChatBtn" type="button">
+                    <span class="btn-icon">＋</span>
+                    <span class="btn-label">新建对话</span>
+                    <span class="btn-tail">♪</span>
+                </button>
+                <div class="empty-tags">
+                    <span class="tag"><span class="tag-dot pink"></span>多模型</span>
+                    <span class="tag"><span class="tag-dot mint"></span>流式响应</span>
+                    <span class="tag"><span class="tag-dot yellow"></span>Markdown</span>
+                </div>
+            </section>
+
+            <!-- chat view -->
+            <section class="chat-view" id="chatView" hidden>
+                <header class="chat-header">
+                    <div class="chat-meta">
+                        <span class="chat-model-badge" id="chatModelBadge">model</span>
+                        <h2 class="chat-title" id="chatTitle">新对话</h2>
+                    </div>
+                    <div class="chat-actions">
+                        <span class="chat-status" id="chatStatus">就绪</span>
+                    </div>
+                </header>
+
+                <div class="chat-messages" id="chatMessages">
+                    <!-- messages injected here -->
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="input-wrap">
+                        <textarea
+                            id="messageInput"
+                            class="message-input"
+                            placeholder="请输入您的消息...(Enter发送，Shift+Enter换行)"
+                            maxlength="2000"
+                            rows="1"
+                            autocomplete="off"
+                        ></textarea>
+                        <button class="send-btn" id="sendBtn" type="button" aria-label="发送" disabled>
+                            <!-- guitar-pick shaped send -->
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4c6 0 10 4 10 9 0 4-2.5 7-5 11-2 3-3 4-5 4s-3-1-5-4c-2.5-4-5-7-5-11 0-5 4-9 10-9z"
+                                      fill="currentColor"/>
+                                <path d="M11 14L20 14M11 18L17 18" stroke="#FFF8F0" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="input-meta">
+                        <span class="input-hint">♪ Enter 发送 · Shift + Enter 换行</span>
+                        <span class="char-counter" id="charCounter"><b>0</b> / 2000</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- ============== MODEL MODAL ============== -->
+    <div class="modal-backdrop" id="modelModal" hidden>
+        <div class="modal" role="dialog" aria-labelledby="modalTitle">
+            <div class="modal-decoration" aria-hidden="true">
+                <span>♪</span><span>♫</span><span>♬</span>
+            </div>
+            <header class="modal-header">
+                <h3 id="modalTitle">选择本次对话的主唱</h3>
+                <p class="modal-sub">每次只能选择一位模型 ～</p>
+            </header>
+
+            <div class="model-grid" id="modelGrid">
+                <!-- model cards injected -->
+            </div>
+
+            <div class="model-loading" id="modelLoading">
+                <div class="spinner"></div>
+                <span>正在拉取乐队成员…</span>
+            </div>
+
+            <footer class="modal-footer">
+                <button class="btn btn-ghost" id="modalCancelBtn" type="button">取消</button>
+                <button class="btn btn-primary" id="modalConfirmBtn" type="button" disabled>
+                    <span>确定</span>
+                    <span class="btn-tail">♪</span>
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ============== TOAST ============== -->
+    <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
