@@ -34,7 +34,7 @@ ChatServer::ChatServer(const ServerConfig& config){
     // geminiConfig->_temperature = config.temperature;
     // geminiConfig->_maxTokens = config.maxTokens;
 
-    // Ollama本地接入deepseek-r1:1.5b
+    // Ollama本地接入qwen3.5:9b
     auto ollamaConfig = std::make_shared<sdk_holmes::OllamaConfig>();
     ollamaConfig->_modelName = config.ollamaModelName;
     ollamaConfig->_modelDesc = config.ollamaModelDesc;
@@ -131,9 +131,30 @@ void ChatServer::handleCreateSessionRequest(const httplib::Request& request, htt
         return;
     }
 
-    // 获取请求参数
-    std::string modelName = requestJson.get("model", "deepseek-chat").asString();
-    
+    // 获取请求参数 - model 字段必须显式提供, 不再静默兜底成 deepseek-chat
+    if(!requestJson.isMember("model") || !requestJson["model"].isString() || requestJson["model"].asString().empty()){
+        std::string errorJsonStr = buildResponse("missing or empty 'model' field");
+        response.status = 400; // 缺少必填字段
+        response.set_content(errorJsonStr, "application/json");
+        return;
+    }
+    std::string modelName = requestJson["model"].asString();
+
+    // 校验模型是否已注册 (避免脏数据写入会话表)
+    bool modelRegistered = false;
+    for(const auto& modelInfo : _chatSDK->getAvailableModels()){
+        if(modelInfo._modelName == modelName){
+            modelRegistered = true;
+            break;
+        }
+    }
+    if(!modelRegistered){
+        std::string errorJsonStr = buildResponse("model not registered: " + modelName);
+        response.status = 400; // 不支持的模型名
+        response.set_content(errorJsonStr, "application/json");
+        return;
+    }
+
     // 创建会话
     std::string sessionID = _chatSDK->createSession(modelName);
     if(sessionID.empty()){
@@ -382,7 +403,7 @@ void ChatServer::handleSendMessageStreamRequest(const httplib::Request& request,
             // Json::valueToQuotedString: 对chunk进行Json转换，目的防止chunk中包含一些特殊字符来破坏数据格式，比如：在chunk中包含了两个连续的换行，就会影响SSE数据格式
             std::string sseData = "data: " + Json::valueToQuotedString(chunk.c_str()) + "\n\n";
 
-            // 需要将模型返回的结果 chunk 发送给客户单
+            // 需要将模型返回的结果 chunk 发送给客户端
             dataSink.write(sseData.c_str(), sseData.size());  // 将数据写入响应流，即立即发送给客户单，该方法不会等待缓冲区满之后发送
 
             // 处理结束标记
